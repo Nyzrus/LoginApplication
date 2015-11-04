@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Addition</title>
+
+<script type="text/javascript" src="addEmployeeVerification.js"></script>
+</head>
+<body>
+	<h3>Create New Employee Profile</h3>
+	<br>
+	 <!--  action="CreateEmployeeServlet" -->
+	<form method="POST" onsubmit="verifyForm()">
+		<br>
+		First Name:<input type="text" name="firstName"><br>
+		<label id="firstNameLabel">s</label>
+		Last Name:<input type="text" name="lastName"><br>
+		Username:<input type="text" name="userName"><br>
+		Password:<input type="text" name="password"><br>
+		Confirm Password:<input type="text" name="confirmPassword"><br>
+		<input type="submit">
+	</form>
+	<script>
+	function verifyForm(){
+		alert("ok");
+		Document.getElementById("firstNameLabel").innerHTML = "asdsa";
+		
+	}
+	
+	var firstName = Document.getElementsByName("firstName");
+	</script>
+</body>
+</html>
